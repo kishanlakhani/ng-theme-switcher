@@ -1,0 +1,34 @@
+.nav {
+    background: var(--background-default);
+    height: 60px; 
+}
+    
+.nav li {
+  display: inline-block;
+  list-style: none;
+  height: 30px; 
+  line-height: 30px; 
+  padding: 0 40px; 
+  margin-right: 20px;
+}
+
+.nav li:hover,.router-link-active{
+  transition: background 0.3s;
+  border: 2px dotted var(--primary-default);
+}
+
+.nav-link {
+  color: var(--primary-default);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+select{
+  float: right;
+  margin-right: 40px;
+  padding: 5px;
+  background-color: var(--primary-default);
+  color: var(--background-default);
+  font-size: 20px;
+}

@@ -1,0 +1,22 @@
+<div class="nav">
+    <ul>
+        <li [ngClass]="{'router-link-active': route === '/home'}"><a [routerLink]="['/home']" class="nav-link">Home</a>
+        </li>
+        <li [ngClass]="{'router-link-active': route === '/contact'}"><a [routerLink]="['/contact']"
+                class="nav-link">Contact</a></li>
+        
+            <select (change)="toggleTheme($event.target.value)">
+                <option value="light">
+                    light
+                </option>
+                <option value="dark">
+                    dark
+                </option>
+                <option value="blue">
+                    blue
+                </option>
+               
+            </select>
+    
+    </ul>
+</div>
