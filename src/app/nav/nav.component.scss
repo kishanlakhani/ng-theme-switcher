@@ -2,7 +2,13 @@
     background: var(--background-default);
     height: 60px; 
 }
-    
+ 
+@media (max-width: 767px) { 
+  .nav{
+    height: 120px;
+    text-align: center;
+  }
+} 
 .nav li {
   display: inline-block;
   list-style: none;
@@ -11,7 +17,16 @@
   padding: 0 40px; 
   margin-right: 20px;
 }
-
+@media (max-width: 767px) { 
+  .nav{
+    height: 140px;
+    text-align: center;
+  }
+  .nav li {
+    display: block;
+    padding-bottom: 10px;
+  }
+} 
 .nav li:hover,.router-link-active{
   transition: background 0.3s;
   border: 2px dotted var(--primary-default);
@@ -25,8 +40,7 @@
 }
 
 select{
-  float: right;
-  margin-right: 40px;
+  // margin-right: 40px;
   padding: 5px;
   background-color: var(--primary-default);
   color: var(--background-default);
